@@ -40,7 +40,7 @@ PF-Telematica/
 ### Clonar el repositorio
 ```
 git clone https://github.com/Titolin4612/PF-Telematica.git
-cd PF-Telematica/app
+cd PF-Telematica
 ```
 ### Construir la imagen Docker
 v1 sera el nombre de version (v1, v2, v3, v4)
