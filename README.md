@@ -86,6 +86,6 @@ sudo docker run -d -p 80:80 servicioweb:v1
 ```
 ---
 ## 🙏 Agradecimientos Especiales
-### ¡Gracias, Profe Carlos, por ayudarme a crear ese gusto por la materia y motivarme a querer aprender más y más en cada clase, nunca deje perder la pasión, vocación y alegría con la que trasmite conocimiento en cada clase!
+### ¡Gracias, Profe Carlos, por ayudarme a desarrollar un verdadero interés por la materia y motivarme a aprender cada vez más en cada clase! Nunca pierda la pasión, la vocación y la alegría con las que transmite su conocimiento.
 --- 
 ## Hecho con ❤️ por Santiago Hernandez Morantes
