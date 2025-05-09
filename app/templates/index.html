@@ -1,0 +1,129 @@
+<!-- Proyecto: Servicio Telemático Profesional -->
+<!-- Autor: Santiago Hernandez Morantes -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicio Telemático Profesional desplegado en Docker, construido con Python y Flask. Escalable, contenerizado y optimizado para la nube.">
+  <meta name="keywords" content="Docker, Flask, Python, Servicio Telemático, AWS, Cloud, UPB">
+  <meta name="author" content="Santiago Hernandez Morantes">
+  <title>Servicio Telemático Pro</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+<body>
+  <header class="hero">
+  <nav class="navbar">
+    <div class="logo">
+      <h1>🐳 <span style="color:#1a73e8">Telemático Docker Pro</span></h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#features">Características</a></li>
+      <li><a href="#instructions">Despliegue</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <span>☰</span>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <h1>Despliega tu Servicio en Docker en minutos 🧠⚙️</h1>
+    <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker logo" style="width:150px; margin-bottom: 1rem;">
+    <p>Proyecto final - <strong>Python + Flask</strong> con <strong>Docker</strong>, preparado para escalar en la nube ☁️</p>
+    <a href="#instructions" class="cta-button">Ver cómo desplegar</a>
+  </div>
+</header>
+
+
+  <main>
+    <section id="home" class="container">
+      <h2>✨ Bienvenido al Servicio Telemático</h2>
+      <p>Proyecto desarrollado por <strong>Santiago Hernandez Morantes</strong> para el examen 3 de Telemática en la Universidad Pontificia Bolivariana - Medellín.</p>
+      <p>Este servicio web ligero, escalable y profesional utiliza <strong>Python + Flask</strong> para el backend, <strong>HTML + CSS</strong> para una interfaz moderna, y <strong>Docker</strong> para un despliegue eficiente en entornos locales o en la nube. Descubre sus características y lánzalo en minutos.</p>
+    </section>
+
+    <section id="features" class="features">
+      <h2>🌟 Características Principales</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span>📦</span>
+          <h3>100% Contenerizado</h3>
+          <p>Empaquetado en Docker para garantizar portabilidad y consistencia en cualquier entorno.</p>
+        </div>
+        <div class="feature-card">
+          <span>🔄</span>
+          <h3>Despliegue Continuo</h3>
+          <p>Reproducible en cualquier máquina o plataforma cloud con un solo comando.</p>
+        </div>
+        <div class="feature-card">
+          <div class="emoji-container">
+            <span>🎨</span>
+          </div>
+          <h3>Diseño Profesional</h3>
+          <p>Interfaz moderna, intuitiva y optimizada para una experiencia de usuario fluida.</p>
+        </div>
+        <div class="feature-card">
+          <span>🚀</span>
+          <h3>Escalable</h3>
+          <p>Soporta múltiples contenedores y configuraciones de puertos para alto rendimiento.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructions" class="instructions">
+    <h2>🌐 Cómo Desplegar el Servicio</h2>
+    <div class="instructions-content">
+        <p>Sigue estos pasos para ejecutar esta aplicación en tu máquina local o servidor en la nube:</p>
+        <ol>
+        <li>Clona el repositorio oficial del proyecto: <code>git clone https://github.com/Titolin4612/PF-Telematica.git</code>
+        </li>
+        <li>Entra al directorio del proyecto y Construye la imagen Docker desde el Dockerfile: <code>docker build -t servicioweb:v1 .</code>
+        </li>
+        <li>Ejecuta el contenedor en segundo plano: <code>docker run -d -p 80:80 servicioweb:v1</code>
+        </li>
+        <li>Abre tu navegador y visita: <code>http://localhost</code>
+        </li>
+        </ol>
+        <p>¿Quieres desplegarlo en la nube? Sigue la guía detallada en el
+        <a href="https://github.com/Titolin4612/PF-Telematica#readme" target="_blank"> README</a> del proyecto
+        para desplegar en <strong>AWS EC2</strong> u otras plataformas cloud.
+        </p>
+    </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ por <strong>Santiago Hernandez Morantes</strong> - Universidad Pontificia Bolivariana</p>
+
+  </footer>
+
+  <script>
+    // Script para el menú responsive y desplazamiento suave
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Toggle del menú responsive
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Desplazamiento suave para todos los enlaces con anclas
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 70, // Ajuste para la navbar fija
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
