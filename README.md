@@ -74,6 +74,8 @@ sudo docker rm containerId
 	```app/templates/index.html:```
 * Ajusta el diseño visual (colores, fuentes, etc.).
 	```app/static/style.css:```
+* Luego de hacer los cambios vuelve a la carpeta inicial donde esta el DockerFile.
+	```cd PF-Telematica```
 #### Reconstruir la imagen:	
 ```
 sudo docker build -t servicioweb:v1 .
