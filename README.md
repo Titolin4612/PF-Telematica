@@ -59,7 +59,16 @@ docker ps
 ```
 ---
 ### ‼️Instrucciones para modificar
-
+#### Antes de modificar el contenido 
+Asegurate de no tener ninguna version antigua del docker, en caso de si tenerla:
+#### Detener docker antiguo
+```
+docker stop containerId
+```
+#### Borrar docker antiguo
+```
+docker rm containerId
+```
 #### Modificar el contenido o diseño fácilmente editando los siguientes archivos:
 * Cambia el contenido HTML de la página.	
 	```app/templates/index.html:```
