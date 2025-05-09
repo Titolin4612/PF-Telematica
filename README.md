@@ -45,29 +45,29 @@ cd PF-Telematica
 ### Construir la imagen Docker
 v1 sera el nombre de version (v1, v2, v3, v4)
 ```
-docker build -t servicioweb:v1 .
+sudo docker build -t servicioweb:v1 .
 ```
 ### Ejecutar el contenedor
 	
 ```
-docker run -d -p 80:80 servicioweb:v1
+sudo docker run -d -p 80:80 servicioweb:v1
 ```
 ### Verificar que el contenedor este corriendo
 	
 ```
-docker ps
+sudo docker ps
 ```
 ---
 ### ‼️Instrucciones para modificar
 #### Antes de modificar el contenido 
 Asegurate de no tener ninguna version antigua del docker, en caso de si tenerla:
-#### Detener docker antiguo
+#### Detener sudo docker antiguo
 ```
-docker stop containerId
+sudo docker stop containerId
 ```
-#### Borrar docker antiguo
+#### Borrar sudo docker antiguo
 ```
-docker rm containerId
+sudo docker rm containerId
 ```
 #### Modificar el contenido o diseño fácilmente editando los siguientes archivos:
 * Cambia el contenido HTML de la página.	
@@ -76,11 +76,11 @@ docker rm containerId
 	```app/static/style.css:```
 #### Reconstruir la imagen:	
 ```
-docker build -t servicioweb:v1 .
+sudo docker build -t servicioweb:v1 .
 ```
 #### Vuelver a ejecutar el contenedor:
 ```
-docker run -d -p 80:80 servicioweb:v1
+sudo docker run -d -p 80:80 servicioweb:v1
 ```
 ---
 ## 🙏 Agradecimientos Especiales
