@@ -37,6 +37,12 @@ PF-Telematica/
 ---
 ##  ❗Instrucciones de despliegue
 
+### Instalar Docker
+
+```
+sudo apt update
+sudo apt install docker-compose -y
+```
 ### Clonar el repositorio
 ```
 git clone https://github.com/Titolin4612/PF-Telematica.git
