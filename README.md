@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Alfa+Slab+One&pause=1000&color=96E5F7&center=true&width=435&lines=Proyecto+Final+Telem%C3%A1tica)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Alfa+Slab+One&size=31&pause=1000&color=96E5F7&width=435&lines=Proyecto+Final+Telem%C3%A1tica)](https://git.io/typing-svg)
 ---
 🌐 Servicio Telemático - Examen 3 - Santiago Hernandez
 ---
